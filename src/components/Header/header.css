@@ -1,0 +1,22 @@
+.story-card {
+  background-image: url("../../../public/images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-gradient {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    rgba(0, 0, 0, 0.2);
+}
+.our-story-card {
+  max-width: 960px;
+}
+
+.border-bottom {
+  border-bottom: 8px solid #222;
+}

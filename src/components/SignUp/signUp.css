@@ -1,0 +1,11 @@
+.register-form-container {
+  max-width: 440px;
+}
+.sign-in-email-error-message {
+}
+
+@media screen and (max-width: 420px) {
+  .register-form-container {
+    padding: 0 20px;
+  }
+}

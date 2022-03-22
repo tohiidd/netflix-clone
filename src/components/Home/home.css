@@ -1,0 +1,56 @@
+.header-background {
+  background: url("../../../public/images/theBatman.png") center center
+    no-repeat;
+  background-size: cover;
+}
+.profile-dropdown-options {
+  display: none;
+  top: 80%;
+  left: -42%;
+}
+.profile-dropdown:hover .profile-dropdown-options {
+  display: block !important;
+}
+.movie-summery {
+  max-width: 600px;
+}
+.main-page-footer {
+  max-width: 1000px;
+  color: #757575;
+}
+.main-page-footer-list > li {
+  width: 24%;
+}
+.main-page-footer-list > li:hover a {
+  text-decoration: underline;
+}
+.slider-arrow {
+  background: rgba(22, 22, 22, 0.5);
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 420px) {
+  .main-page-footer-list li {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 420px) {
+  .main-page-footer-list li {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile-dropdown-options {
+    top: 120%;
+    left: -35%;
+  }
+  .main-page-footer-list li {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .profile-dropdown-options {
+    top: 100%;
+    left: -42%;
+  }
+}

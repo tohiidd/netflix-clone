@@ -1,0 +1,86 @@
+.login-email {
+  min-width: 500px;
+  min-height: 60px;
+}
+.login-email-btn {
+  min-height: 60px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 420px) {
+  .login-email {
+    min-width: 100%;
+    min-height: 48px;
+  }
+  .login-email-btn {
+    min-height: 40px;
+  }
+  .sign-in-background {
+    background-color: black;
+  }
+  .sign-in-email-error-message {
+    top: -64px;
+    left: 38px;
+    max-width: 100px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .login-email {
+    min-width: 100%;
+    min-height: 48px;
+  }
+  .login-email-btn {
+    min-height: 40px;
+  }
+  .sign-in-background {
+    background-color: black;
+  }
+  .sign-in-email-error-message {
+    top: -64px;
+    left: 38px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .login-email {
+    min-height: 50px;
+  }
+  .login-email-btn {
+    min-height: 45px;
+  }
+  .sign-in-email-error-message {
+    top: -67px;
+    left: 101px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sign-in-background {
+    background: #000000bf;
+    min-width: 400px;
+  }
+  .sign-in-email-error-message {
+    top: -70px;
+    left: 178px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .login-email {
+    min-width: 500px;
+    min-height: 60px;
+  }
+  .login-email-btn {
+    min-height: 60px;
+    margin-top: 0;
+  }
+  .sign-in-email-error-message {
+    top: 0px;
+    left: 112px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .login-email {
+    min-height: 70px;
+  }
+  .login-email-btn {
+    min-height: 70px;
+  }
+}

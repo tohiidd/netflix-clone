@@ -1,0 +1,36 @@
+.one-story-card-footer {
+  max-width: 1000px;
+  color: #757575;
+}
+.one-story-card-footer-list > li {
+  width: 24%;
+}
+.one-story-card-footer-list > li:hover a {
+  text-decoration: underline;
+}
+.sign-in-footer-wrapper {
+  background: #000000bf;
+  color: #737373;
+}
+.sign-in-footer-wrapper > div {
+  max-width: 1000px;
+}
+.sign-up-footer-wrapper {
+  background-color: #f3f3f3;
+  color: #757575;
+}
+@media screen and (max-width: 420px) {
+  .one-story-card-footer-list > li {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 420px) {
+  .one-story-card-footer-list > li {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 640px) {
+  .one-story-card-footer-list > li {
+    width: 24%;
+  }
+}

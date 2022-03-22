@@ -1,0 +1,81 @@
+.border-bottom {
+  border-bottom: 8px solid #222;
+}
+.one-story-video-container {
+  max-width: 90%;
+  max-height: 55%;
+  top: 20%;
+  left: 5%;
+}
+
+.one-story-card-animation {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  bottom: 6%;
+  left: 20%;
+}
+.one-story-card-animation::after {
+  content: "";
+  background: url("../../../public/videos/download-icon.gif") center center
+    no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 3em;
+  height: 3em;
+}
+.one-story-video-container-v2 {
+  max-width: 72%;
+  max-height: 48%;
+  top: 10%;
+  left: 13%;
+}
+.faq-question {
+  background: #303030;
+}
+.faq-question + div {
+  background: #303030;
+}
+.faq-list {
+  max-width: 815px;
+}
+@media screen and (max-width: 420px) {
+  .one-story-card-animation {
+    left: 0;
+    height: 4em;
+  }
+  .faq-question {
+    padding: 0.6em 1em 0.6em 1.2em;
+  }
+}
+@media screen and (min-width: 420px) {
+  .one-story-text-container > h1 {
+    font-size: 2.2rem;
+  }
+  .one-story-card-animation {
+    width: 70%;
+    left: 14%;
+  }
+  .faq-question {
+    padding: 0.6em 1em 0.6em 1.2em;
+  }
+}
+@media screen and (min-width: 640px) {
+  .one-story-text-container > h1 {
+    font-size: 3rem;
+  }
+  .faq-question {
+    padding: 0.8em 2.2em 0.8em 1.2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .one-story-video-container-parent {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .one-story-video-container {
+    left: 5%;
+  }
+  .one-story-card-animation {
+    max-width: 70%;
+  }
+}

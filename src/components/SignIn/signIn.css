@@ -1,0 +1,59 @@
+.story-card {
+  background-image: url("../../../public/images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-gradient {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    rgba(0, 0, 0, 0.2);
+  min-height: 100vh;
+}
+.sign-in-form-background {
+  background: #000000bf;
+}
+.sign-in-form-input {
+  background: #333333;
+  caret-color: white;
+}
+.sign-in-form-label {
+  color: #8c8c8c8c;
+}
+.sign-in-form-input:focus .sign-in-form-label {
+  top: 5px !important;
+}
+.sign-in-form-checkbox-container {
+  color: #b3b3b3 !important;
+}
+.sign-in-others {
+  color: #737373;
+}
+.password-error-message {
+  max-width: 280px;
+}
+input[type="password"]:focus .show-btn {
+  display: block;
+}
+
+@media screen and (max-width: 420px) {
+  .sign-in-background {
+    background-color: black;
+  }
+}
+@media screen and (min-width: 420px) {
+  .sign-in-background {
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sign-in-background {
+    background: #000000bf;
+    min-width: 400px;
+  }
+}

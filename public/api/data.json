@@ -2,55 +2,73 @@
   {
     "id": 1,
     "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "img": "./images/Spider-Man-No-Way-Home-confirme-sa-date-de-sortie-1024x576.jpg",
+    "trailer":"./videos/trailer/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
     },
   {
-    "id": 1,
-    "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "id": 2,
+    "name": "the-batman",
+    "img": "./images/the-batman-61ed2673a2ff2.jpg",
+    "trailer":"./videos/trailer/THE BATMAN – Main Trailer.mp4",
+    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
-    "id": 1,
-    "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "id": 3,
+    "name": "the-adam-project",
+    "img": "./images/the-adam-project-wide.png",
+    "trailer":"./videos/trailer/The Adam Project - Official Teaser - Netflix.mp4",
+    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
-    "id": 1,
-    "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "id": 4,
+    "name": "deep-water",
+    "img": "./images/DEEP-WATER.png",
+    "trailer":"./videos/trailer/Deep Water - Hulu.mp4",
+    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
-    "id": 1,
-    "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "id": 5,
+    "name": "matrix-resurrections",
+    "img": "./images/matrix-resurrections-original-references.png",
+    "trailer":"./videos/trailer/The Matrix Resurrections – Official Trailer 2.mp4",
+    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
-    "id": 1,
-    "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "id": 6,
+    "name": "f9-the-fast-saga",
+    "img": "./images/f9-the-fast-saga1481900581.jpg",
+    "trailer":"./videos/trailer/F9 - Official Trailer 2.mp4",
+    "fullVideo":"./videos/trailer/F9 - Official Trailer 2.mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
-    "id": 1,
-    "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "id": 7,
+    "name": "Shang-chi",
+    "img": "./images/Shang-chi.jpg",
+    "trailer":"./videos/trailer/Marvel Studios’ Shang-Chi and the Legend of the Ten Rings - Official Trailer.mp4",
+    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
-    "id": 1,
-    "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "id": 8,
+    "name": "black-light",
+    "img": "./images/black-light.jpg",
+    "trailer":"./videos/trailer/Blacklight Trailer #1 (2022) - Movieclips Trailers.mp4",
+    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
-    "id": 1,
-    "name": "spider-man",
-    "img": "../../public/images/item.jpg",
-    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man"
+    "id": 9,
+    "name": "the-kings-man",
+    "img": "./images/the-kings-man.jpg",
+    "trailer":"./videos/trailer/The King's Man - Official Trailer - 20th Century Studios.mp4",
+    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   }
 ]

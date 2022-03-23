@@ -1,62 +1,79 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-// import movieList from "../../api/movieList.json";
-function List() {
-  const [movieList, setMovieList] = useState([]);
-  async function getData() {
-    try {
-      const { data, status } = await axios.get("./api/data.json");
-      setMovieList(data);
-    } catch (error) {
-      console.log(error);
+import { useRef, useState } from "react";
+import ListItem from "./ListItem";
+import "./list.css";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+function List({ movieList, title }) {
+  const [isMoved, setIsMoved] = useState(false);
+  const movieListRef = useRef();
+
+  function handleSlider(direction) {
+    let div = movieListRef.current.children[0].offsetWidth;
+    let coordinates = movieListRef.current.getBoundingClientRect();
+    let distance = window.innerWidth - coordinates.width;
+
+    setIsMoved(true);
+
+    if (direction === "left" && coordinates.x < 0) {
+      movieListRef.current.style.transform = `translateX(${
+        div + coordinates.x
+      }px)`;
+    }
+
+    if (direction === "right" && coordinates.x > distance + div) {
+      movieListRef.current.style.transform = `translateX(${
+        -div + coordinates.x
+      }px)`;
+    } else if (direction === "right" && coordinates.x > distance) {
+      movieListRef.current.style.transform = `translateX(${
+        -div + coordinates.x + 180
+      }px)`;
     }
   }
-  getData();
 
   return (
-    <div className="bg-black pb-24 border-b-2 border-solid border-gray-800">
-      <div className="relative overflow-hidden">
+    <div className="bg-black pb-8 ">
+      <div className="relative">
         <div>
           <h1 className="text-white font-semibold text-2xl ml-12 py-2">
-            Drama
+            {title}
           </h1>
         </div>
         <div className="relative">
-          <div className="slider-arrow absolute flex items-center justify-center h-full w-10 text-4xl z-10">
-            <i className="fa-solid fa-chevron-left" />
+          {isMoved && (
+            <div
+              className="slider-arrow absolute flex items-center justify-center h-full w-10 text-4xl z-10"
+              onClick={() => handleSlider("left")}
+            >
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </div>
+          )}
+          <div
+            className="slider-arrow absolute flex items-center justify-center h-full w-10 text-4xl right-0 z-10"
+            onClick={() => handleSlider("right")}
+          >
+            <FontAwesomeIcon icon={faChevronRight} />
           </div>
-          <div className="slider-arrow absolute flex items-center justify-center h-full w-10 text-4xl right-0 z-10">
-            <i className="fa-solid fa-chevron-right" />
-          </div>
-          <div className="slider-items flex w-max" id="slider-items">
-            <ListItem
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
-            <div className="mr-2">
-              <img src="images/item.jpg" alt="item" />
-            </div>
+          <div
+            ref={movieListRef}
+            className="slider-items flex w-max "
+            id="slider-items"
+          >
+            {movieList.map((movie) => (
+              <ListItem
+                key={movie.id}
+                id={movie.id}
+                name={movie.name}
+                img={movie.img}
+                desc={movie.desc}
+                trailer={movie.trailer}
+                fullVideo={movie.fullVideo}
+              />
+            ))}
           </div>
         </div>
       </div>

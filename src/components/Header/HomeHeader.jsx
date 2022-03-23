@@ -1,7 +1,13 @@
+import {
+  faBell,
+  faCaretDown,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function HomeHeader() {
   return (
     <section className="header-background">
-      {/* topNav  */}
       <div className="mx-auto w-11/12 text-white pt-5">
         <div className="w-full">
           <div className="inline-block mr-3 lg:mr-6">
@@ -34,10 +40,12 @@ function HomeHeader() {
             <div className="mx-2 lg:mx-4">
               <span className="mr-2 lg:mr-4">
                 <i className="fa-solid fa-magnifying-glass" />
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
               </span>
               <span className="mr-2 lg:mr-4">KID</span>
               <span>
                 <i className="fa-solid fa-bell" />
+                <FontAwesomeIcon icon={faBell} />
               </span>
             </div>
             <div>
@@ -49,6 +57,7 @@ function HomeHeader() {
             </div>
             <div className="profile-dropdown relative ml-4 w-8 cursor-pointer">
               <div className="text-center">
+                <FontAwesomeIcon icon={faCaretDown} />
                 <i className="fa-solid fa-caret-down mt-1" />
               </div>
               <div className="absolute profile-dropdown-options bg-black rounded-md p-1">

@@ -1,0 +1,6 @@
+.slider-items {
+  transition: all 200ms ease-in-out;
+}
+.slider-items > div {
+  max-width: 260px;
+}

@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
+import Helmet from "react-helmet";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router";
 import Footer from "../Footer/Footer";
 import TopHeader from "../Header/TopHeader";
 
@@ -10,7 +12,7 @@ function SignIn() {
   const [buttonText, setButtonText] = useState(true);
   var passwordInput = useRef();
   var showButton = useRef();
-
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -20,24 +22,32 @@ function SignIn() {
   const onSubmit = (data) => {
     console.log("success");
     console.log(data);
+    navigate("/home", {
+      replace: true,
+    });
   };
   const onError = (errors) => {
     console.log("error");
     console.log(errors);
   };
   function showPassword() {
-    if (passwordInput.current.type === "password") {
-      passwordInput.current.type = "text";
+    let input = passwordInput.current.children[0];
+    if (input.type === "password") {
+      input.type = "text";
     } else {
-      passwordInput.current.type = "password";
+      input.type = "password";
     }
     setButtonText((prevButtonText) => !prevButtonText);
   }
   function visibleButton() {
     showButton.current.style.display = "block";
   }
+
   return (
     <section className="story-card">
+      <Helmet>
+        <title>Netflix </title>
+      </Helmet>
       <div className="sign-in-background">
         <TopHeader />
         {/* <SignInForm /> */}
@@ -69,7 +79,7 @@ function SignIn() {
                   </span>
                 </div>
               </div>
-              <div className="mb-1 h-20 relative">
+              <div className="mb-1 h-20 relative" ref={passwordInput}>
                 <input
                   onFocus={visibleButton}
                   name="password"
@@ -79,14 +89,17 @@ function SignIn() {
                   className="sign-in-form-input outline-none w-full py-3 rounded-md px-6 text-white"
                   {...register("password", {
                     required: "Password is required",
-                    pattern: {
-                      value:
-                        /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/,
+                    minLength: {
+                      value: 4,
                       message:
-                        "Your password must contain numbers, capital letters and between 6 and 16 characters.",
+                        "Your password should be between 6 and 16 characters.",
+                    },
+                    maxLength: {
+                      value: 16,
+                      message:
+                        "Your password should be between 6 and 16 characters.",
                     },
                   })}
-                  ref={passwordInput}
                 />
                 <div className="password-error-message">
                   <span className="block  text-orange-600 text-xs ml-1">
@@ -137,7 +150,7 @@ function SignIn() {
               <div className="my-3">
                 <span className="mr-2">New to Netflix?</span>
                 <span>
-                  <Link to="/SignUp" className="text-white">
+                  <Link to="/sign-up" className="text-white">
                     Sign up now
                   </Link>
                 </span>

@@ -46,17 +46,17 @@ function List({ movieList, title }) {
         <div className="relative">
           {isMoved && (
             <div
-              className="slider-arrow absolute flex items-center justify-center h-full w-10 text-4xl z-10"
+              className="slider-arrow absolute flex items-center justify-center h-full w-10 text-4xl "
               onClick={() => handleSlider("left")}
             >
-              <FontAwesomeIcon icon={faChevronLeft} />
+              <FontAwesomeIcon icon={faChevronLeft} className="z-10" />
             </div>
           )}
           <div
-            className="slider-arrow absolute flex items-center justify-center h-full w-10 text-4xl right-0 z-10"
+            className="slider-arrow absolute flex items-center justify-center h-full w-10 text-4xl right-0 "
             onClick={() => handleSlider("right")}
           >
-            <FontAwesomeIcon icon={faChevronRight} />
+            <FontAwesomeIcon icon={faChevronRight} className="z-10" />
           </div>
           <div
             ref={movieListRef}

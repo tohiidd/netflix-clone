@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import Helmet from "react-helmet";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 import { netflixContext } from "../../context/netflixContext";
@@ -30,6 +31,9 @@ function SignUp() {
   }
   return (
     <section>
+      <Helmet>
+        <title>Netflix </title>
+      </Helmet>
       <div>
         <div>
           <TopHeader />
@@ -81,8 +85,7 @@ function SignUp() {
                     {...register("password", {
                       required: "Password is required",
                       pattern: {
-                        value:
-                          /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/,
+                        value: /^(?=.*[0-9])[a-zA-Z0-9!@#$%^&*]{6,16}$/,
                         message:
                           "Your password should contain numbers, capital letters and between 6 and 16 characters.",
                       },

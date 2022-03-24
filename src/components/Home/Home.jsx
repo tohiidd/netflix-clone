@@ -11,6 +11,7 @@ function Home() {
   useEffect(async () => {
     try {
       const { data } = await axios.get("./api/data.json");
+      console.log(data);
       setMovieList(data);
     } catch (error) {
       console.log(error);

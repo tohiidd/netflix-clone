@@ -58,9 +58,8 @@ function HomeHeader() {
             <div className="profile-dropdown relative ml-4 w-8 cursor-pointer">
               <div className="text-center">
                 <FontAwesomeIcon icon={faCaretDown} />
-                <i className="fa-solid fa-caret-down mt-1" />
               </div>
-              <div className="absolute profile-dropdown-options bg-black rounded-md p-1">
+              <div className="absolute flex flex-col profile-dropdown-options bg-black rounded-md p-1">
                 <span>Settings</span>
                 <span>Logout</span>
               </div>

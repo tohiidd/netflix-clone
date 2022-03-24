@@ -1,6 +1,7 @@
 .video-container {
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
   width: 350px;
+  z-index: 51;
   /* transition: all 20000ms ease-in-out; */
   /* transform: translateX(-50); */
 }

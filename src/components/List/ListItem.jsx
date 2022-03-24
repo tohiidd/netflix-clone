@@ -15,8 +15,8 @@ function ListItem({ img, trailer, desc, fullVideo }) {
   const [hoverTimeout, setHoverTimeout] = useState();
   const context = useContext(netflixContext);
 
-  console.log(context);
   context.fullVideo = fullVideo;
+
   function hoverEnter() {
     const hover = setTimeout(() => {
       setIsHovered(true);
@@ -38,13 +38,15 @@ function ListItem({ img, trailer, desc, fullVideo }) {
       </Link>
       {isHovered && (
         <div className="video-container absolute top-0 z-50 bg-black">
-          <video
-            src={`${trailer}`}
-            autoPlay
-            loop
-            muted
-            className="object-cover"
-          />
+          <Link to="/watch">
+            <video
+              src={`${trailer}`}
+              autoPlay
+              loop
+              muted
+              className="object-cover"
+            />
+          </Link>
           <div className="text-white text-sm p-3">
             <div className="">
               <Link to="/watch">

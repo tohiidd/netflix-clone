@@ -6,6 +6,7 @@ import { netflixContext } from "../../context/netflixContext";
 
 function Watch() {
   const context = useContext(netflixContext);
+  console.log(context.fullVideo);
 
   return (
     <div className="w-screen h-screen">

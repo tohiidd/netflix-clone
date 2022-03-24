@@ -12,7 +12,7 @@
     "name": "the-batman",
     "img": "./images/the-batman-61ed2673a2ff2.jpg",
     "trailer":"./videos/trailer/THE BATMAN – Main Trailer.mp4",
-    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "fullVideo":"./videos/trailer/THE BATMAN – Main Trailer.mp4",
     "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
@@ -20,7 +20,7 @@
     "name": "the-adam-project",
     "img": "./images/the-adam-project-wide.png",
     "trailer":"./videos/trailer/The Adam Project - Official Teaser - Netflix.mp4",
-    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "fullVideo":"./videos/trailer/The Adam Project - Official Teaser - Netflix.mp4",
     "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
@@ -28,7 +28,7 @@
     "name": "deep-water",
     "img": "./images/DEEP-WATER.png",
     "trailer":"./videos/trailer/Deep Water - Hulu.mp4",
-    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "fullVideo":"./videos/trailer/Deep Water - Hulu.mp4",
     "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
@@ -36,7 +36,7 @@
     "name": "matrix-resurrections",
     "img": "./images/matrix-resurrections-original-references.png",
     "trailer":"./videos/trailer/The Matrix Resurrections – Official Trailer 2.mp4",
-    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "fullVideo":"./videos/trailer/The Matrix Resurrections – Official Trailer 2.mp4",
     "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
@@ -52,7 +52,7 @@
     "name": "Shang-chi",
     "img": "./images/Shang-chi.jpg",
     "trailer":"./videos/trailer/Marvel Studios’ Shang-Chi and the Legend of the Ten Rings - Official Trailer.mp4",
-    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "fullVideo":"./videos/trailer/Marvel Studios’ Shang-Chi and the Legend of the Ten Rings - Official Trailer.mp4",
     "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
@@ -60,7 +60,7 @@
     "name": "black-light",
     "img": "./images/black-light.jpg",
     "trailer":"./videos/trailer/Blacklight Trailer #1 (2022) - Movieclips Trailers.mp4",
-    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "fullVideo":"./videos/trailer/Blacklight Trailer #1 (2022) - Movieclips Trailers.mp4",
     "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   },
   {
@@ -68,7 +68,7 @@
     "name": "the-kings-man",
     "img": "./images/the-kings-man.jpg",
     "trailer":"./videos/trailer/The King's Man - Official Trailer - 20th Century Studios.mp4",
-    "fullVideo":"./videos/SPIDER-MAN- NO WAY HOME - Official Trailer (HD).mp4",
+    "fullVideo":"./videos/trailer/The King's Man - Official Trailer - 20th Century Studios.mp4",
     "desc": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. "
   }
 ]

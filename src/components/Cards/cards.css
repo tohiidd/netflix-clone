@@ -37,6 +37,15 @@
 .faq-list {
   max-width: 815px;
 }
+.answer {
+  /* transform: scaleY(0); */
+  display: none;
+  transition: all 1000ms ease-in-out;
+  transform-origin: top;
+}
+.max-width-960 {
+  max-width: 960px;
+}
 @media screen and (max-width: 420px) {
   .one-story-card-animation {
     left: 0;

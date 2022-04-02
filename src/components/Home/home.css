@@ -3,14 +3,7 @@
     no-repeat;
   background-size: cover;
 }
-.profile-dropdown-options {
-  display: none;
-  top: 80%;
-  left: -42%;
-}
-.profile-dropdown:hover .profile-dropdown-options {
-  display: block !important;
-}
+
 .movie-summery {
   max-width: 600px;
 }
@@ -40,17 +33,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .profile-dropdown-options {
-    top: 120%;
-    left: -35%;
-  }
   .main-page-footer-list li {
     width: 24%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .profile-dropdown-options {
-    top: 100%;
-    left: -42%;
   }
 }

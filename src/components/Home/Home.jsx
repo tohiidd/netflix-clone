@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import HomeHeader from "../Header/HomeHeader";
 import List from "../List/List";
 import "./home.css";
+import requests from "./request";
 
 function Home() {
   const [movieList, setMovieList] = useState([]);
@@ -18,9 +19,21 @@ function Home() {
     }
   }, []);
   return (
-    <section className="overflow-hidden">
+    <section>
       <HomeHeader />
       <section>
+        {/* <List
+          fetchUrl={requests.fetchNetflixOriginals}
+          title={"Netflix Original"}
+          isLarge
+        />
+        <List movieList={requests.fetchActionMovies} title={"Action"} />
+        <List movieList={requests.fetchComedyMovies} title={"Drama"} />
+        <List
+          movieList={requests.fetchHorrorMovies}
+          title={"Science Fiction"}
+        /> */}
+        <List movieList={movieList} title={"Netflix Original"} isLarge />
         <List movieList={movieList} title={"Action"} />
         <List movieList={movieList} title={"Drama"} />
         <List movieList={movieList} title={"Science Fiction"} />

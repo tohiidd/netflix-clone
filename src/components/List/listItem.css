@@ -5,8 +5,20 @@
   /* transition: all 20000ms ease-in-out; */
   /* transform: translateX(-50); */
 }
-.list-item {
+.list-item{
+  transition: all 200ms;
+  transform: scale(1);
+}
+.list-item:hover{
+  transform: scale(1.1);
+}
+.list-item:hover .show-button{
+  display: flex;
 }
 .list-item:not(:first-child) > .video-container {
   left: -50px;
+}
+
+.img-height{
+  max-height: 220px;
 }

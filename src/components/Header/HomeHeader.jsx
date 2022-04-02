@@ -1,71 +1,10 @@
-import {
-  faBell,
-  faCaretDown,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HomeNav from "./HomeNav";
 
 function HomeHeader() {
   return (
     <section className="header-background">
+      <HomeNav />
       <div className="mx-auto w-11/12 text-white pt-5">
-        <div className="w-full">
-          <div className="inline-block mr-3 lg:mr-6">
-            <img
-              src="images/netflixLogo.png"
-              alt="netflixLogo"
-              className="w-24 h-6 lg:w-32 lg:h-8"
-            />
-          </div>
-          <div className="hidden md:inline-block align-top mt-1">
-            <nav className="text-sm lg:text-base">
-              <a href className="ml-2 lg:ml-3">
-                Homepage
-              </a>
-              <a href className="ml-2 lg:ml-3">
-                Movies
-              </a>
-              <a href className="ml-2 lg:ml-3">
-                Series
-              </a>
-              <a href className="ml-2 lg:ml-3">
-                New And Popular
-              </a>
-              <a href className="ml-2 lg:ml-3">
-                My List
-              </a>
-            </nav>
-          </div>
-          <div className="hidden md:flex float-right items-center text-sm lg:text-lg">
-            <div className="mx-2 lg:mx-4">
-              <span className="mr-2 lg:mr-4">
-                <i className="fa-solid fa-magnifying-glass" />
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
-              </span>
-              <span className="mr-2 lg:mr-4">KID</span>
-              <span>
-                <i className="fa-solid fa-bell" />
-                <FontAwesomeIcon icon={faBell} />
-              </span>
-            </div>
-            <div>
-              <img
-                src="images/user.png"
-                alt="user"
-                className="w-8 h-8 rounded-md object-cover"
-              />
-            </div>
-            <div className="profile-dropdown relative ml-4 w-8 cursor-pointer">
-              <div className="text-center">
-                <FontAwesomeIcon icon={faCaretDown} />
-              </div>
-              <div className="absolute flex flex-col profile-dropdown-options bg-black rounded-md p-1">
-                <span>Settings</span>
-                <span>Logout</span>
-              </div>
-            </div>
-          </div>
-        </div>
         {/* header  */}
         <div className="mt-36 pb-24">
           <div className="md:w-8/12 lg:w-full">

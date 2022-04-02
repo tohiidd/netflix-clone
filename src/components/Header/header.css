@@ -20,3 +20,37 @@
 .border-bottom {
   border-bottom: 8px solid #222;
 }
+.nav-bg{
+  background-color: rgba(0, 0, 0, .85);
+}
+.profile-dropdown-options {
+  display: none;
+  top: 80%;
+  left: -42%;
+}
+.profile-dropdown:hover .profile-dropdown-options {
+  display: flex !important;
+}
+.searchbox{
+  background-color: rgba(0, 0, 0, .6);
+  transform-origin: right;
+  transform: scaleX(0);
+  display: none;
+  transition: all 200ms;
+}
+.show-searchbox{
+  transform: scaleX(1);
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .profile-dropdown-options {
+    top: 120%;
+    left: -35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .profile-dropdown-options {
+    top: 100%;
+    left: -42%;
+  }
+}

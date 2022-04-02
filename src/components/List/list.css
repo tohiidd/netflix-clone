@@ -4,3 +4,9 @@
 .slider-items > div {
   max-width: 260px;
 }
+.slider-items{
+
+}
+.scroll-items::-webkit-scrollbar{
+  display: none;
+}

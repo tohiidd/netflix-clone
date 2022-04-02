@@ -1,5 +1,7 @@
 import "./listItem.css";
 import {
+  faInfo,
+  faInfoCircle,
   faPlay,
   faPlus,
   faThumbsDown,
@@ -10,74 +12,47 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { netflixContext } from "../../context/netflixContext";
 
-function ListItem({ img, trailer, desc, fullVideo }) {
-  const [isHovered, setIsHovered] = useState(false);
-  const [hoverTimeout, setHoverTimeout] = useState();
+function ListItem({
+  img,
+  trailer,
+  fullVideo,
+  isLarge,
+  handlePlay,
+  id,
+  handlePopup,
+}) {
+  // const [showTrailer, setShowTrailer] = useState(false);
   const context = useContext(netflixContext);
 
   context.fullVideo = fullVideo;
+  // context.trailer = trailer;
 
-  function hoverEnter() {
-    const hover = setTimeout(() => {
-      setIsHovered(true);
-    }, 1500);
-    setHoverTimeout(hover);
-  }
-  function hoverLeave() {
-    clearTimeout(hoverTimeout);
-    setIsHovered(false);
-  }
   return (
-    <div
-      className="mr-2 relative cursor-pointer list-item"
-      onMouseEnter={hoverEnter}
-      onMouseLeave={hoverLeave}
-    >
+    <div className=" list-item  px-3">
       <Link to="/watch">
-        <img src={`${img}`} alt="item" className="-z-10" />
+        <img
+          src={`${img}`}
+          alt="item"
+          className={`${isLarge && "img-height"}`}
+        />
       </Link>
-      {isHovered && (
-        <div className="video-container absolute top-0 z-50 bg-black">
-          <Link to="/watch">
-            <video
-              src={`${trailer}`}
-              autoPlay
-              loop
-              muted
-              className="object-cover"
+
+      <div className="show-button hidden justify-center items-center absolute top-0 left-0 right-0 bottom-0">
+        <div className=" text-2xl">
+          <button onClick={() => handlePlay(trailer)}>
+            <FontAwesomeIcon
+              icon={faPlay}
+              className="text-red-600 mr-4 cursor-pointer"
             />
-          </Link>
-          <div className="text-white text-sm p-3">
-            <div className="">
-              <Link to="/watch">
-                <FontAwesomeIcon
-                  icon={faPlay}
-                  className="border-2 border-white border-solid py-2 px-3 rounded-3xl mr-2 cursor-pointer"
-                />
-              </Link>
-              <FontAwesomeIcon
-                icon={faPlus}
-                className="border-2 border-white border-solid py-2 px-3 rounded-3xl mr-2 cursor-pointer"
-              />
-              <FontAwesomeIcon
-                icon={faThumbsUp}
-                className="border-2 border-white border-solid py-2 px-3 rounded-3xl mr-2 cursor-pointer"
-              />
-              <FontAwesomeIcon
-                icon={faThumbsDown}
-                className="border-2 border-white border-solid py-2 px-3 rounded-3xl cursor-pointer"
-              />
-            </div>
-            <div className="my-2">
-              <span>2 hour 14 mins</span>
-              <span className="limit">+16</span>
-              <span>1999</span>
-            </div>
-            <div className="text-justify">{desc}</div>
-            <div className="genre">Action</div>
-          </div>
+          </button>
+          <button onClick={() => handlePopup(id)}>
+            <FontAwesomeIcon
+              icon={faInfoCircle}
+              className="text-white cursor-pointer"
+            />
+          </button>
         </div>
-      )}
+      </div>
     </div>
   );
 }

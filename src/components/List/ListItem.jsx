@@ -12,8 +12,12 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { netflixContext } from "../../context/netflixContext";
 
+const base_url = "https://image.tmdb.org/t/p/original/";
+
 function ListItem({
-  img,
+  imgBackdrop,
+  imgPoster,
+  name,
   trailer,
   fullVideo,
   isLarge,
@@ -21,25 +25,20 @@ function ListItem({
   id,
   handlePopup,
 }) {
-  // const [showTrailer, setShowTrailer] = useState(false);
   const context = useContext(netflixContext);
 
   context.fullVideo = fullVideo;
-  // context.trailer = trailer;
+  let imgUrl = isLarge ? imgPoster : imgBackdrop;
 
   return (
-    <div className=" list-item  px-3">
+    <div className=" list-item px-3">
       <Link to="/watch">
-        <img
-          src={`${img}`}
-          alt="item"
-          className={`${isLarge && "img-height"}`}
-        />
+        <img src={`${base_url}${imgUrl}`} alt={`${name}`} />
       </Link>
 
       <div className="show-button hidden justify-center items-center absolute top-0 left-0 right-0 bottom-0">
         <div className=" text-2xl">
-          <button onClick={() => handlePlay(trailer)}>
+          <button onClick={() => handlePlay(id)}>
             <FontAwesomeIcon
               icon={faPlay}
               className="text-red-600 mr-4 cursor-pointer"
